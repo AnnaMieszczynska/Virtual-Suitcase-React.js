@@ -19,24 +19,30 @@ class App extends React.Component {
         })
     }
 
-    handleCloseList = () => {
+    handleCloseList = (value) => {
         this.setState({
-            lists: this.state.lists.filter(onclick)
+           lists: this.state.lists.filter(list => list !== value) // ['kosmetyki', 'ubrania']
         })
+        console.log(value)
     }
 
     render() {
         return (
             <div className="App">
+                <h1 className="App-header"> My Suitcase </h1>
                 <NewCategoryListCreator createList={this.createNewList} />
-                <Suitcase />
-                {
-                    this.state.lists.map(list => {
-                        return (
-                            <CategoryList title={list} className="CategoryList" closeList={this.handleCloseList}/>
-                        )
-                    })
-                }
+                <div className="content-container">
+                    <div className="List-container">
+                        {
+                            this.state.lists.map(list => {
+                                return (
+                                    <CategoryList title={list} className="CategoryList" closeList={this.handleCloseList}/>
+                                )
+                            })
+                        }
+                    </div>
+                    <Suitcase />
+                </div>
             </div>
         );
     }

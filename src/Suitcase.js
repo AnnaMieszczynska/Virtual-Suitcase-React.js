@@ -6,7 +6,9 @@ class Suitcase extends React.Component {
     }
 
     render() {
-        return <div className='Suitcase'></div>
+        return <div className='Suitcase'>
+            <h1> My Suitcase </h1>
+        </div>
     }
 
 }

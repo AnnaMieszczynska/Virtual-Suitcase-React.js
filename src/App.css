@@ -1,18 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial';
+}
+
 .App {
   margin: 0 auto;
-  width: 1024px;
-  height: 100vh;
-  border: 2px solid mediumvioletred;
+  max-width: 1024px;
   position: relative;
+  padding: 0 20px;
+}
+
+.App-header {
+  text-align: center;
+  font-size: 30px;
+  margin: 20px 0 40px;
+}
+
+.NewCategory {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.NewCategory-input {
+  padding: 10px;
+  border-radius: 10px;
+  bow-shadow: none;
+  border: 1px solid gray;
+}
+
+.NewCategory-button-submit {
+  margin-left: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: tomato;
+  color: white;
+  box-shadow: none;
+  border: 0;
+
 }
 
 .Suitcase {
-  width: 500px;
+  width: 400px;
   height: 300px;
-  position: absolute;
-  top: 40%;
-  left: 25%;
   border: 1px solid blue;
+  position: fixed;
+  right: 20%;
+  top: 30%;
+  border-radius: 10px;
+}
+
+.Suitcase h1 {
+  text-align: center;
+  margin: 10px 0;
 }
 
 .CategoryList {
@@ -28,9 +72,107 @@
 
 }
 
+.List-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: 40px 0;
+  padding: 0 40px;
+}
 
+.content-container {
+  display: flex;
+}
 
+.category-list {
+  width: 70%;
+  margin: 20px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
 
+.ListHeader {
+  padding: 10px;
+  position: relative;
+}
+
+.ListHeader-title {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.ListHeader-check-final {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  border: 1px solid gray;
+  padding: 5px;
+}
+
+.ListHeader-collapse {
+  position: absolute;
+  right: 40px;
+  top: 10px;
+  border: 1px solid gray;
+  padding: 5px;
+}
+
+.ListHeader-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: 1px solid gray;
+  padding: 5px;
+}
+
+.newTask-btn {
+  display: block;
+  margin: 10px auto;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  background: tomato;
+  color: white;
+  box-shadow: none;
+  border: 0;
+}
+
+.ListItem {
+  position: relative;
+}
+
+.ListItem-container {
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+.ListItem-input {
+  display: block;
+  padding: 10px 60px 10px 40px;
+  width: 90%;
+  margin: 10px auto;
+}
+
+.ListItem-checkbox {
+  position: absolute;
+  left: 30px;
+  top: 13px;
+}
+
+.ListItem-close {
+  position: absolute;
+  right: 20px;
+  top: 3px;
+}
+
+.ListItem-debate {
+  position: absolute;
+  right: 50px;
+  top: 3px;
+}
 
 
 /* .App {
