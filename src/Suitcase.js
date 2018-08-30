@@ -7,7 +7,7 @@ class Suitcase extends React.Component {
 
     render() {
         return <div className='Suitcase'>
-            <h1> My Suitcase </h1>
+            <h1> Let's pack this suitcase! </h1>
         </div>
     }
 

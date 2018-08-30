@@ -13,7 +13,7 @@ class NewCategoryListCreator extends React.Component {
     render() {
         return <div className="NewCategory">
             <label htmlFor="">
-                <input className="NewCategory-input" placeholder="Type Category" type="text" value={this.state.value} onChange={this.readValue}/>
+                <input className="NewCategory-input" placeholder="type category (e.g. clothes)..." type="text" value={this.state.value} onChange={this.readValue}/>
                 <input className="NewCategory-button-submit" type="submit" value="Add" onClick={() => this.props.createList(this.state.value)}/>
             </label>
         </div>

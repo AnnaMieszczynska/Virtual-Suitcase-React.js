@@ -11,6 +11,7 @@ class App extends React.Component {
         this.state = {
             lists: []
         }
+        //const listId = () => {lists.forEach(`${[i]+1}`)}
     }
 
     createNewList = (value) => {
@@ -36,7 +37,7 @@ class App extends React.Component {
                         {
                             this.state.lists.map(list => {
                                 return (
-                                    <CategoryList title={list} className="CategoryList" closeList={this.handleCloseList}/>
+                                    <CategoryList title={list} className="CategoryList" /*id={listId}*/ closeList={this.handleCloseList}/>
                                 )
                             })
                         }

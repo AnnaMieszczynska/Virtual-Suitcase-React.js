@@ -19,6 +19,7 @@ body {
   text-align: center;
   font-size: 30px;
   margin: 20px 0 40px;
+  color: gray;
 }
 
 .NewCategory {
@@ -29,8 +30,9 @@ body {
 .NewCategory-input {
   padding: 10px;
   border-radius: 10px;
-  bow-shadow: none;
+  box-shadow: none;
   border: 1px solid gray;
+  width: 200px;
 }
 
 .NewCategory-button-submit {
@@ -47,7 +49,7 @@ body {
 .Suitcase {
   width: 400px;
   height: 300px;
-  border: 1px solid blue;
+  border: 2px solid tomato;
   position: fixed;
   right: 20%;
   top: 30%;
@@ -57,6 +59,8 @@ body {
 .Suitcase h1 {
   text-align: center;
   margin: 10px 0;
+  font-size: 20px;
+  color: gray;
 }
 
 .CategoryList {
@@ -89,7 +93,7 @@ body {
   width: 70%;
   margin: 20px;
   border-radius: 10px;
-  border: 1px solid black;
+  border: 1px solid gray;
 }
 
 .ListHeader {
@@ -101,31 +105,41 @@ body {
   font-weight: bold;
   text-align: center;
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: 18px;
+  color: gray;
 }
 
 .ListHeader-check-final {
   position: absolute;
   left: 10px;
   top: 10px;
-  border: 1px solid gray;
   padding: 5px;
+  border: 2px solid tomato;
+  background-color: white;
+  color: tomato;
+  border-radius: 80px;
 }
 
 .ListHeader-collapse {
   position: absolute;
   right: 40px;
   top: 10px;
-  border: 1px solid gray;
+  //border: 1px solid gray;
   padding: 5px;
+  border: none;
+  background-color: white;
+  color: gray;
 }
 
 .ListHeader-close {
   position: absolute;
   right: 10px;
   top: 10px;
-  border: 1px solid gray;
+  //border: 1px solid gray;
   padding: 5px;
+  border: none;
+  background-color: white;
+  color: gray;
 }
 
 .newTask-btn {
@@ -154,6 +168,8 @@ body {
   padding: 10px 60px 10px 40px;
   width: 90%;
   margin: 10px auto;
+  border: 1px solid lightgray;
+  border-radius: 5px;
 }
 
 .ListItem-checkbox {
@@ -166,40 +182,18 @@ body {
   position: absolute;
   right: 20px;
   top: 3px;
+  border: none;
+  background-color: white;
+  color: lightgray;
 }
 
 .ListItem-debate {
   position: absolute;
-  right: 50px;
+  right: 40px;
   top: 3px;
+  border: none;
+  background-color: white;
+  color: lightgray;
 }
 
 
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-} */
