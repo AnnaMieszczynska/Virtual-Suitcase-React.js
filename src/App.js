@@ -9,9 +9,17 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            lists: []
+            lists: [],
+            suitCaseList: []
         }
         //const listId = () => {lists.forEach(`${[i]+1}`)}
+    }
+
+    finalCheck = (title) => {
+        this.setState({
+            lists: this.state.lists.filter(item => item !== title),
+            suitCaseList: this.state.suitCaseList.concat(title)
+        });
     }
 
     createNewList = (value) => {
@@ -37,12 +45,12 @@ class App extends React.Component {
                         {
                             this.state.lists.map(list => {
                                 return (
-                                    <CategoryList title={list} className="CategoryList" /*id={listId}*/ closeList={this.handleCloseList}/>
+                                    <CategoryList finalCheck={this.finalCheck} title={list} className="CategoryList" /*id={listId}*/ closeList={this.handleCloseList}/>
                                 )
                             })
                         }
                     </div>
-                    <Suitcase />
+                    <Suitcase suitCaseList={this.state.suitCaseList}/>
                 </div>
             </div>
         );

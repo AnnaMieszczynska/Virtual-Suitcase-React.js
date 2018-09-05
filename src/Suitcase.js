@@ -8,6 +8,20 @@ class Suitcase extends React.Component {
     render() {
         return <div className='Suitcase'>
             <h1> Let's pack this suitcase! </h1>
+            {
+                this.props.suitCaseList.map((item, index) => {
+                    return (
+                        <div key={index}>
+                            <p style={{textAlign: 'center'}}>
+                                {item}
+                            </p>
+                            <button className="btnShow">Show</button>
+                        </div>
+
+                    )
+                })
+
+            }
         </div>
     }
 
